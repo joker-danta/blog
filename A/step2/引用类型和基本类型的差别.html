@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>引用类型和基本类型的差别</title>
+</head>
+<body>
+<script>
+    //基本类型
+    var a1 = 111;
+    var a2 = a1;
+    a2 = 222;
+    console.log(a1,a2); // a1 = 111 ; a2 = 222
+    /**
+     * 得出结论a1和a2的值是独立的，不论另一个怎么修改都不会影响到自己
+     */
+
+    //引用类型
+    var person1 = {
+            name:'张三'
+        };
+    var person2 = person1;
+    console.log(person1.name,person2.name); //都为张三
+    // 接下来修改person2对象的name属性
+    person2.name = '李四';
+    console.log(person1.name,person2.name);//都为李四
+    /**
+     * 为什么会这样？修改了person2对象上的name属性，为什么person1上的竟然受到了印象
+     */
+</script>
+</body>
+</html>
