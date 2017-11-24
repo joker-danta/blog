@@ -9,6 +9,7 @@
 3. vue使用心得or一些适合新手的入门教程文章,后文称为C模块,[点击进入](https://github.com/joker-danta/blog/tree/master/C).
 4. 前端自动化工具使用心得or踩过的坑,后文称为D模块,[点击进入](https://github.com/joker-danta/blog/tree/master/D).
 5. 插件集合,这里会将自己曾经造的轮子的经验思路分享出来,大家可以参考一下,毕竟网上的插件也有很优秀的,但有的时候却又不满足我们的需求,大家都知道,修改别人代码是一件很蛋疼的事情,尤其是当没有注释的情况.感觉自己一路走来没有少造轮子,如果大家都掌握了其中的思路,那么当有需求来的时候完全就能自己造了,毕竟自己造的轮子,想怎么改就怎么改.后文称为E模块,[点击进入](https://github.com/joker-danta/blog/tree/master/E).
+6. js小技巧，踩坑实录。适合初中级已经有点工作经验的人阅读分享。不建议初学者上来直接阅读，后文称为F模块,[点击进入](https://github.com/joker-danta/blog/tree/master/F)
 
 - 毕竟不是大牛,希望大家不喜勿喷.所有内容均会持续更新,有问题的话欢迎issues或者邮件联系我,我会及时更新.
 
@@ -18,3 +19,7 @@
 1.[浏览器历史](https://github.com/joker-danta/blog/tree/master/A/step1)
 
 2.[javascript作用域和数据类型](https://github.com/joker-danta/blog/tree/master/A/step2)
+
+> B模块
+
+1. [css编码规范（推荐阅读）](https://github.com/joker-danta/blog/tree/master/B/step1)
