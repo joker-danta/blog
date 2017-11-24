@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>执行环境及作用域</title>
+</head>
+<body>
+    <script>
+        var color = 'blue';
+        function changeColor(){
+            var chang = 'red';
+            function swColor(){
+                var tem = chang;
+                chang = color;
+                color = tem
+            }
+            swColor();
+            console.log(color,chang)
+        }
+        changeColor();
+        /**
+         * 这边总共涉及到了三个执行环境，第一是全局环境，第二是changeColor()的执行环境，第三是swColor()的执行环境
+         * 其中swColor环境的权限最大，它可以访问到tem,chang,color变量
+         * 其次是changeColor环境，他可以访问到change,color变量
+         */
+        //那如何才能突破这种限制？那就是闭包了。在这边就先不多多讲了，后面会详细给大家介绍闭包的相关知识，大家先知道一下这个限制是可以被突破的就行了。
+    </script>
+</body>
+</html>
