@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if else 简写</title>
+</head>
+<body>
+<script>
+    var status = 0;
+    var res = 2;
+    if(status) {
+        res = 1
+    }
+    else {
+        res = 0
+    }
+    console.log(res); // 0
+    //首先使用三元运算符（有的也叫三目运算符）
+    (status) ? res = 1 : res = 0;
+    /**
+     * 三元运算符适用于很多场景，是一个比较常用的if/else简写形式
+     */
+
+
+    var str1 = 0;
+    var resultl1;
+    str1 && ( resultl1 = 1);
+    console.log('resultl1的值是',resultl1);  // undefined
+    var str2 = 1;
+    var resultl2;
+    str2 && ( resultl2 = 1 );
+    console.log('resultl2的值是',resultl2);  // 1
+
+    var str3 = 0;
+    var resultl3;
+    str3 || (resultl3 = 1);
+    console.log('resultl3的值是',resultl3);  //1
+
+    /**
+     * 其实这里的 && || 符是可以当作if来使用的
+     * str1中的例子其实就是当str1为真 的时候，才会去执行后面的代码也就是括号里面的内容
+     * str2中和str1是同样的道理，所以str2的console的值是1
+     * str3中，只有当str3的值为假 的时候，才回去执行后面的代码段
+     */
+
+</script>
+</body>
+</html>
