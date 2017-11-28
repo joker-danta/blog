@@ -47,3 +47,5 @@
 - 如果是只是单一条件的话，例如if(条件){...逻辑}的话建议使用逻辑运算，最好可以写上注释 
 - 如果是if(){...逻辑}else{...逻辑}的形式的话建议是用三元运算
 - 如果是多条件例如：if(){...逻辑}else if(){...逻辑}这样的条件，建议老老实实的使用if/或者switch
+
+[MDN文档地址](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
