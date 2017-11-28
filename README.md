@@ -26,7 +26,7 @@
 
 > C模块
 
-1. 等待更新 
+1. [汇总一下论坛/QQ群里高频问题](https://github.com/joker-danta/blog/tree/master/C/step1)  
 
 > D模块
 

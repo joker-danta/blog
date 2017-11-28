@@ -182,8 +182,36 @@
     
     > 好好去看看官方的说明吧，很详细. [官方地址](https://cn.vuejs.org/v2/guide/conditional.html#v-if-vs-v-show)
     
+    24.单组件中里面的 import xxx from '@/components/layout/xxx'中的@是什么?
+    
+    > 打开webpack的配置文件，可以看到，其实就是这个@相当于一个别名，然后从这个别名下去找到对应的文件
+    
+    25.为什么我的 npm 或者 yarn 安装依赖会生成 lock文件,有什么用?
+    
+    > lock 文件的作用是统一版本号,这对团队协作有很大的作用;
+      若是没有 lock 锁定,根据package.json里面的^,~这些..
+      不同人,不同时间安装出来的版本号不一定一致;
+      有些包甚至有一些breaking change(破坏性的更新),造成开发很难顺利进行!!!
       
-
+    26.如何缓存组件?
+   
+    > 可以使用keep-alive，但不是无脑缓存所有的组件。[官方说明](https://cn.vuejs.org/v2/api/#keep-alive)
+    
+    27.文件打包体积过大，首屏加载太慢
+    
+    > 首先应该尽可能的减少第三方库的依赖，比如JQ等，而且在使用vue的时候基本可以放弃JQ了，可以使用路由懒加载。官方已经提供好了相关功能，大家前去查阅即可.
+    
+    28.spa应用没法seo？
+    
+    > 目前谷歌是可以爬取js的，但是百度就不行，这种情况下就只能使用服务端渲染。
+    [参考链接](https://zh.nuxtjs.org/)
+    
+    29.vue可以写 hybird App 吗!
+    
+    - [codorva](https://cordova.apache.org/) + [nativescript](https://github.com/rigor789/nativescript-vue)
+    - [weex](https://weex.apache.org/cn/) 阿里巴巴出品，据说阿里的钉钉就是使用这个做的
+    
+    
         
 
     
