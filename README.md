@@ -30,7 +30,7 @@
 
 > D模块
 
-1. 等待更新
+1. [gulp大白话,小白教程](https://github.com/joker-danta/blog/tree/master/D/step1)
 
 > E模块
 
