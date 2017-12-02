@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面试题（1）</title>
+</head>
+<body>
+    <script>
+        function demo (){
+            console.log(a);
+            var a = 'aaaa';
+            function a (){
+
+            }
+        }
+        demo();
+        function person(){
+            this.name = '张三';
+            this.age = '20';
+            person.prototype.color = 'red';
+        }
+        var obj = new person();
+        console.log(obj.name);
+        console.log(obj.color)
+    </script>
+</body>
+</html>

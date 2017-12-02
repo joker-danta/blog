@@ -16,13 +16,13 @@
 #### 快速入口
 > A模块
 
-1.[浏览器历史](https://github.com/joker-danta/blog/tree/master/A/step1)
+1. [浏览器历史](https://github.com/joker-danta/blog/tree/master/A/step1)
 
-2.[javascript作用域和数据类型](https://github.com/joker-danta/blog/tree/master/A/step2)
+2. [javascript作用域和数据类型](https://github.com/joker-danta/blog/tree/master/A/step2)
 
 > B模块
 
-1.[css编码规范（推荐阅读）](https://github.com/joker-danta/blog/tree/master/B/step1)
+1. [css编码规范（推荐阅读）](https://github.com/joker-danta/blog/tree/master/B/step1)
 
 > C模块
 
