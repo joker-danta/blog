@@ -141,4 +141,19 @@ for(let y of numArr9) {
  */
 ```
 
+- filter遍历
+
+```
+//filter()方法创建一个新的匹配过滤条件的数组。（ES6新增）
+var numArr10 = [1,2,3,4,5,6];
+var newnumArr10 =  numArr10.filter((item) => {
+    return item > 3
+});
+console.log('filter',newnumArr10);
+/**
+ * filter是一个很好用的方法
+ * 主要就是应用在从一个数组或者对象中返回出满足条件的项
+ */
+```
+
 
