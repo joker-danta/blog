@@ -40,3 +40,4 @@
 
 1. [if-else简写](https://github.com/joker-danta/blog/tree/master/F/step1)
 2. [常见面试题（一）](https://github.com/joker-danta/blog/tree/master/F/step2)
+3. [js循环大法解析](https://github.com/joker-danta/blog/tree/master/F/step3)
