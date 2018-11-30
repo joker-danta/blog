@@ -17,8 +17,8 @@
 > A模块
 
 1. [浏览器历史](https://github.com/joker-danta/blog/tree/master/A/step1)
-
 2. [javascript作用域和数据类型](https://github.com/joker-danta/blog/tree/master/A/step2)
+3. [call,apply,bind的使用](https://github.com/joker-danta/blog/tree/master/A/step3)
 
 > B模块
 
