@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>call,apply,bind的使用</title>
+</head>
+<body>
+  <script>
+    function a () {
+      console.log(this)
+    }
+    function b () {
+      console.log('方法b')
+    }
+    var c={name:"call"};
+    a.call(); //window
+    a.call(null); //window
+    a.call(undefined); //window
+    a.call(1); //Number
+    a.call(''); //String
+    a.call(true); //Boolean
+    a.call(b); //function b(){}
+    a.call(c); //Object
+    function class1(){
+      this.name = function(){
+        console.log("我是class1内的方法");
+      }
+    }
+    function class2(){
+      class1.call(this); //此行代码执行后，当前的this指向了class1（也可以说class2继承了class1）
+    }
+    var f = new class2();
+    f.name(); //调用的是class1内的方法，将class1的name方法交给class2使用
+
+    function eat(x,y){
+      console.log(x+y);
+    }
+    function drink(x,y){
+      console.log(x-y);
+    }
+    eat.call(drink,3,2); // 5
+    /*
+    * 这个例子中的意思就是用 eat 来替换 drink，eat.call(drink,3,2) == eat(3,2) ，所以运行结果为：5
+    注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。
+    */
+
+    var vegetables = ['parsnip', 'potato'];
+    var moreVegs = ['celery', 'beetroot'];
+
+    // 将第二个数组融合进第一个数组
+    // 相当于 vegetables.push('celery', 'beetroot');
+    Array.prototype.push.apply(vegetables, moreVegs);
+
+    console.log(vegetables);
+    // ['parsnip', 'potato', 'celery', 'beetroot']
+
+
+    function Animal(name) {
+      this.name = name;
+      this.showName = function () {
+        console.log(this.name);
+      }
+    }
+    function Cat(name) {
+      Animal.call(this, name);
+    }
+    var cat = new Cat('Black Cat');
+    cat.showName(); // Black Cat
+
+    var fakeArr = {0:'a',1:'b',length:2};
+    var arr1 = Array.prototype.slice.call(fakeArr);
+    console.log(arr1[0]);
+    var arr2 = [].slice.call(fakeArr);
+    console.log(arr2[0]);
+    arr1.push("c");
+    console.log(arr1)
+  </script>
+</body>
+</html>
